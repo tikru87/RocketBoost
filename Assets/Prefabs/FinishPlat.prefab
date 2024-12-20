@@ -97,11 +97,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5906316087102309349}
-  - component: {fileID: 2100818573719681595}
   - component: {fileID: 2269242040327419510}
   m_Layer: 0
   m_Name: FinishPlat
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,18 +122,6 @@ Transform:
   - {fileID: 487281922144895078}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2100818573719681595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5668268480008448028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b4dffd7c36603446b5f7e57b115b1e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &2269242040327419510
 BoxCollider:
   m_ObjectHideFlags: 0
