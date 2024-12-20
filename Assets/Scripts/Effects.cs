@@ -29,17 +29,12 @@ public class Effects : MonoBehaviour
         if (flying.isThrusting)
         {
             thusterParticles.Play();
-            if (!audioSource.isPlaying)
-            {
-                audioSource.volume = 1f;
-                audioSource.Play();
-            }
+            audioSource.volume = 0.5f;
         }
         else
         {
             thusterParticles.Stop();
-            audioSource.volume = 0.1f;
-            audioSource.Stop();
+            audioSource.volume = 0.0f;
         }
     }
 }
