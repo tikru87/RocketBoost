@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
+    Flying flying;
     private Light platLight;
     private void OnCollisionEnter(Collision other)
     {
@@ -11,8 +12,10 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("This thing is friendly");
                 break;
             case "Finish":
+                flying = GetComponent<Flying>();
                 platLight = other.gameObject.GetComponentInChildren<Light>();
                 Debug.Log("Collided with: " + other.gameObject.name);
+                flying.DisableControls();
                 platLight.color = Color.green;
                 break;
             default:

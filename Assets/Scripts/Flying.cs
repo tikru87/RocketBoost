@@ -22,8 +22,19 @@ public class Flying : MonoBehaviour
 
     private void OnEnable()
     {
+        EnableControls();
+    }
+
+    private void EnableControls()
+    {
         thrust.Enable();
         rotation.Enable();
+    }
+
+    public void DisableControls()
+    {
+        thrust.Disable();
+        rotation.Disable();
     }
 
     void FixedUpdate()
