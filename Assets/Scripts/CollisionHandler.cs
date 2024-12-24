@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Collided with: " + other.gameObject.name);
                 flying.DisableControls();
                 platLight.color = Color.green;
+                SceneManager.LoadScene(0);
                 break;
             default:
                 Debug.Log("BOOM!");
